@@ -1,0 +1,30 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="vBox" layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="400.0" spacing="10"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <style>
+        -fx-padding : 10;
+        -fx-border-style : solid inside;
+        -fx-border-width : 2;
+        -fx-border-insets : 5;
+        -fx-border-color : white;
+    </style>
+    <children>
+        <HBox fx:id="hBoxInterval" layoutY="10.0" layoutX="10.0" spacing="10">
+            <Label fx:id="intervalLabel" alignment="CENTER_LEFT" text="Determine the random bounds:" />
+            <TextField fx:id="lowerBound" alignment="CENTER" prefWidth="50" style="-fx-border-color: grey" />
+            <Label alignment="CENTER" text="-"/>
+            <TextField fx:id="upperBound" alignment="CENTER" prefWidth="50" style="-fx-border-color: grey"/>
+        </HBox>
+        <HBox fx:id="hBoxNumberOf" layoutX="10.0" layoutY="10.0" spacing="10" >
+            <Label fx:id="numberLabel" alignment="CENTER_LEFT" text="Number of elements in the sequence:"/>
+            <TextField fx:id="numberOf" alignment="CENTER" prefWidth="80" style="-fx-border-color: grey"/>
+        </HBox>
+        <AnchorPane fx:id="buttonAnchorPane">
+            <Button fx:id="generateButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" AnchorPane.leftAnchor="70"
+                    AnchorPane.rightAnchor="70" text="GENERATE" textAlignment="CENTER" onAction="#action"
+                    style="-fx-border-color: grey"/>
+        </AnchorPane>
+    </children>
+</VBox>
