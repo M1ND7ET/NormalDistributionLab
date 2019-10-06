@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="hBox" prefHeight="558.0" prefWidth="928.0" spacing="10.0" style="-fx-padding : 10; -fx-border-style : solid inside;       -fx-border-width : 2; -fx-border-insets : 5; -fx-border-color : white;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.ChartController">
+    <children>
+        <AnchorPane prefHeight="32.0" prefWidth="462.0">
+            <children>
+                <Label contentDisplay="CENTER" layoutX="424.0" layoutY="10.0" text="RESULTS" textAlignment="JUSTIFY" wrapText="false" />
+            </children>
+        </AnchorPane>
+        <HBox prefHeight="485.0" prefWidth="894.0">
+            <children>
+                <LineChart fx:id="lineChart" minWidth="196.0" prefHeight="484.0" prefWidth="631.0">
+                    <xAxis>
+                        <NumberAxis fx:id="xAxis" side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis fx:id="yAxis" side="LEFT" />
+                    </yAxis>
+                </LineChart>
+                <VBox prefHeight="484.0" prefWidth="267.0">
+                    <children>
+                        <HBox prefHeight="32.0" prefWidth="250.0">
+                            <children>
+                                <Label alignment="CENTER" prefHeight="32.0" prefWidth="103.0" text="Math. expectation" textAlignment="CENTER" />
+                                <TextArea fx:id="mathExpectation" prefHeight="32.0" prefWidth="136.0" wrapText="true" />
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="32.0" prefWidth="250.0">
+                            <children>
+                                <Label alignment="CENTER" prefHeight="32.0" prefWidth="103.0" text="Mode" textAlignment="CENTER" />
+                                <TextArea fx:id="mode" prefHeight="32.0" prefWidth="136.0" wrapText="true" />
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="32.0" prefWidth="250.0">
+                            <children>
+                                <Label alignment="CENTER" prefHeight="32.0" prefWidth="103.0" text="Median" textAlignment="CENTER" />
+                                <TextArea fx:id="median" prefHeight="32.0" prefWidth="136.0" wrapText="true" />
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="32.0" prefWidth="250.0">
+                            <children>
+                                <Label alignment="CENTER" prefHeight="32.0" prefWidth="103.0" text="Arithmetic mean" textAlignment="CENTER" />
+                                <TextArea fx:id="arithmeticMean" prefHeight="32.0" prefWidth="136.0" wrapText="true" />
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="32.0" prefWidth="250.0">
+                            <children>
+                                <Label alignment="CENTER" prefHeight="32.0" prefWidth="103.0" text="Harmonic mean" textAlignment="CENTER" />
+                                <TextArea fx:id="harmonicMean" prefHeight="32.0" prefWidth="136.0" wrapText="true" />
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="32.0" prefWidth="250.0">
+                            <children>
+                                <Label alignment="CENTER" prefHeight="32.0" prefWidth="103.0" text="Geometric mean" textAlignment="CENTER" />
+                                <TextArea fx:id="geometricMean" prefHeight="32.0" prefWidth="136.0" wrapText="true" />
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="32.0" prefWidth="250.0">
+                            <children>
+                                <Label alignment="CENTER" prefHeight="32.0" prefWidth="103.0" text="Root mean square" textAlignment="CENTER" />
+                                <TextArea fx:id="rootMeanSquare" prefHeight="32.0" prefWidth="136.0" wrapText="true" />
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="32.0" prefWidth="250.0">
+                            <children>
+                                <Label alignment="CENTER" prefHeight="32.0" prefWidth="103.0" text="Standard deviation" textAlignment="CENTER" />
+                                <TextArea fx:id="standardDeviation" prefHeight="32.0" prefWidth="136.0" wrapText="true" />
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="32.0" prefWidth="250.0">
+                            <children>
+                                <Label alignment="CENTER" prefHeight="32.0" prefWidth="103.0" text="Dispersion" textAlignment="CENTER" />
+                                <TextArea fx:id="dispersion" prefHeight="32.0" prefWidth="136.0" wrapText="true" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</VBox>

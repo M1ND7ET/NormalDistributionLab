@@ -124,10 +124,13 @@ public class GaussianAverages {
         return  (( randomInstance.nextGaussian() * ( (double) 1/3 ))) * (Math.abs((bounds[0] - bounds[1])) / 2) + slide;
     }
 
-
     public double[] distribute() {
         return new double[]{mathExpectation, mode, median, arithmeticMean, harmonicMean, rootMeanSquare,
                 geometricMean, standardDeviation, dispersion};
+    }
+
+    public HashMap<Double, Integer> getEachValueAmount() {
+        return eachValueAmount;
     }
 }
 
